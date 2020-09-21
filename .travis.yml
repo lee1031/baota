@@ -1,0 +1,6 @@
+sudo: required
+services: docker
+script:
+  - docker build -t lee1031/baota:7.4.5 ./centos8/
+after_script:
+  - docker images
