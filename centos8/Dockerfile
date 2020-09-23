@@ -11,8 +11,8 @@ RUN yum -y update \
     && yum -y update \
     && yum -y install dbus \
     && yum -y install openssh-server \
-    && yum install oniguruma -y \
-    && yum install libsodium -y \
+    && yum -y install oniguruma \
+    && yum -y install libsodium \
     && wget -O install.sh http://download.bt.cn/install/install_6.0.sh \
     && echo y|sh install.sh \
 
